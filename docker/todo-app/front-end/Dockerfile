@@ -1,6 +1,6 @@
 FROM node:14-alpine AS frontend
 
-WORKDIR /backend
+WORKDIR /frontend
 
 ADD node_modules.tar.gz .
 
