@@ -16,7 +16,6 @@ services:
       - 3001:3001
   todotests:
     image: todotests
-    restart: on-failure
     depends_on:
       - todofront
       - todoback
