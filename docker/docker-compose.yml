@@ -3,7 +3,6 @@ services:
   todofront:
     image: todofrontend
     restart: on-failure
-    container_name: front_1
     ports:
       - 3000:3000
     depends_on:
@@ -13,12 +12,10 @@ services:
   todoback:
     image: todobackend
     restart: on-failure
-    container_name: back_1
     ports:
       - 3001:3001
   todotests:
     image: todotests
-    container_name: tests_1
     depends_on:
       - todofront
       - todoback
