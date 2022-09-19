@@ -4,9 +4,9 @@ WORKDIR /backend
 
 ADD node_modules.tar.gz .
 
-COPY . .
-
 EXPOSE 3001
+
+COPY . .
 
 CMD ["npm", "start"]
 
