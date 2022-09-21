@@ -2,10 +2,8 @@ FROM mjgargani/puppeteer:trybe1.0 AS tests
 
 WORKDIR /tests
 
-ADD node_modules.tar.gz .
-
-EXPOSE 3000
+ADD node_modules.tar.gz ./
 
 COPY . .
 
-CMD ["npm", "start"]
+CMD ["npm", "test"]

@@ -2,7 +2,7 @@ FROM node:14-alpine AS backend
 
 WORKDIR /backend
 
-ADD node_modules.tar.gz .
+ADD node_modules.tar.gz ./
 
 EXPOSE 3001
 
